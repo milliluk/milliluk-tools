@@ -15,8 +15,9 @@ from __future__ import print_function, division
 import argparse
 import colorsys
 import png #pip install pypng
+import sys
 
-p = argparse.ArgumentParser(description='Convert CGP-220 printer output to a PNG')
+p = argparse.ArgumentParser(description='Convert CGP-220 printer output to a PNG', epilog='Copyright 2015 Erik Gavriluk. Released under the Artistic License 2.0.')
 p.add_argument('infile', help='input file containing raw printer dump')
 p.add_argument('outfile', help='output filename for PNG')
 p.add_argument('-c', action="store_false", default=True, help='block cyan')
@@ -24,6 +25,10 @@ p.add_argument('-m', action="store_false", default=True, help='block magenta')
 p.add_argument('-y', action="store_false", default=True, help='block yellow')
 p.add_argument('-k', action="store_false", default=True, help='block black')
 p.add_argument('-d', action="store", type=int, help='desaturate (0-100)')
+
+if len(sys.argv[1:]) == 0:
+    p.print_help()
+    p.exit()
 
 arg = p.parse_args()
 
