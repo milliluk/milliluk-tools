@@ -100,3 +100,4 @@ src/static
 
 # Random Stuff
 .bash*
+.eggs*
