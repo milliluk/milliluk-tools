@@ -5,9 +5,6 @@
   "files": [{
       "path": "./setup.py",
       "line": 6
-  }, {
-      "path": "Dockerfile",
-      "line": 2
   }],
   "rules": [{
       "trigger": "manual",
