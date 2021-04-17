@@ -1,0 +1,18 @@
+{
+  "scheme": "custom",
+  "schemeDefinition": "major.minor[.build][->patch]",
+  "versionFile": "./package.json",
+  "files": [{
+      "path": "./setup.py",
+      "line": 6
+  }, {
+      "path": "Dockerfile",
+      "line": 2
+  }],
+  "rules": [{
+      "trigger": "manual",
+      "bump": "minor",
+      "branch": "main",
+      "reset": "build"
+  }]
+}

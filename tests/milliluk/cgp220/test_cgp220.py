@@ -2,6 +2,7 @@ import os
 import filecmp
 from subprocess import check_output
 from tempfile import NamedTemporaryFile
+from ...util import unix_only
 
 
 HELP_OUTPUT = (
@@ -16,6 +17,7 @@ HELP_OUTPUT = (
 )
 
 
+@unix_only
 def test_help_message():
     assert check_output("cgp220", shell=True) == HELP_OUTPUT
 
