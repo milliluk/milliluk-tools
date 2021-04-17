@@ -9,7 +9,7 @@
   "rules": [{
       "trigger": "manual",
       "bump": "minor",
-      "branch": "main",
+      "branch": "master",
       "reset": "build"
   }]
 }
