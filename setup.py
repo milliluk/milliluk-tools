@@ -3,7 +3,7 @@
 import setuptools
 
 # VERSION MUST be defined on line 6
-VERSION = "0.0"
+VERSION = "0.1"
 
 test_deps = [
     "black",
