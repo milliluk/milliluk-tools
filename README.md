@@ -9,7 +9,7 @@ Assorted tools for TRS-80 Color Computer and 6809/6309 development.
 
 ### Dependencies
 
-Python 2 or 3 supported. Requires pypng (pip install pypng).
+Python 3 supported. Requires pypng (pip install pypng).
 
 
 ### License
