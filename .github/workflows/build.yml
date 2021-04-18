@@ -26,4 +26,4 @@ jobs:
       - name: Run tests
         run: |
           pycodestyle src tests setup.py
-          pytest --cov=src
+          tox
